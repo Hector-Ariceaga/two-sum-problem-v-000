@@ -21,5 +21,38 @@ let bruteForceTwoSum = (a, sum) => {
 
 
 let binarySearchTwoSum = (a, sum) => {
+  
+}
 
+let mergeSort = array => {
+  if (array.lenth <=1) {
+    return array
+  }
+
+  const middle = Math.floor(array / 2)
+  const left = array.splice(0, middle)
+  const right = array.splice(middle)
+
+  merge(mergeSort(left), mergeSort(right))
+}
+
+let merge = (left, right) => {
+  let sorted = [];
+  let min;
+  while(left.length !=0 && right.length != 0){
+    min = findMinAndRemove(left, right)
+    sorted.push(min)
+  }
+  return sorted.concat(left).concat(right)
+}
+
+let findMinAndRemove = (left, right) => {
+  let leftMin = left[0];
+  let rightMin = right[0];
+
+  if(leftMin < rightMin) {
+    left.shift()
+  } else {
+    right.shift()
+  }
 }
