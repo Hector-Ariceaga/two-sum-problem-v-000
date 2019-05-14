@@ -1,4 +1,4 @@
-let bruteForceTwoSum = (sum, a) => {
+let bruteForceTwoSum = (a, sum) => {
   let twoSums = [];
   for (let i = 0; i < a.length; i++) {
     for (let j = i + 1; i < a.length; j++) {
