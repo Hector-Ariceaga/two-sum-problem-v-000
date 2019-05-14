@@ -29,7 +29,7 @@ let mergeSort = array => {
     return array
   }
 
-  const middle = Math.floor(array / 2)
+  const middle = Math.floor(array.length / 2)
   const left = array.splice(0, middle)
   const right = array.splice(middle)
 
