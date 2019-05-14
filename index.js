@@ -40,7 +40,7 @@ let merge = (left, right) => {
   let sorted = [];
   let min;
   while(left.length !=0 && right.length != 0){
-    min = findMinAndRemove(left, right)
+    let min = findMinAndRemove(left, right)
     sorted.push(min)
   }
   return sorted.concat(left).concat(right)
