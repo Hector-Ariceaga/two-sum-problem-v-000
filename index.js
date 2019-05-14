@@ -22,6 +22,7 @@ let bruteForceTwoSum = (a, sum) => {
 
 let binarySearchTwoSum = (a, sum) => {
   mergeSort(a)
+  return a
 }
 
 let mergeSort = array => {
@@ -38,7 +39,6 @@ let mergeSort = array => {
 
 let merge = (left, right) => {
   let sorted = [];
-  let min;
   while(left.length !=0 && right.length != 0){
     let min = findMinAndRemove(left, right)
     sorted.push(min)
