@@ -6,5 +6,5 @@ let bruteForceTwoSum = (a, sum) => {
        twoSums.push([a[i], a[j]])
       }
     }
-  } 
+  }
 }
