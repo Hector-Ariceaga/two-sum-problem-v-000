@@ -7,7 +7,14 @@ let bruteForceTwoSum = (a, sum) => {
           twoSums.push([a[i], a[j]])
         }
       }
-    } return twoSums
+    } else {
+      return "Array is empty"
+    }
+    
+  if (twoSums.length > 0) {
+    return twoSums
+  } else {
+    return "There are no two sum solutions."
   }
 }
 
