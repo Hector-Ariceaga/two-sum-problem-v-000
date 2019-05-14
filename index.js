@@ -38,7 +38,8 @@ let mergeSort = array => {
 
 let merge = (left, right) => {
   let sorted = [];
-  while(left.length !=0 && right.length != 0){
+  let min;
+  while(left.length != 0 && right.length != 0){
     let min = findMinAndRemove(left, right)
     sorted.push(min)
   }
