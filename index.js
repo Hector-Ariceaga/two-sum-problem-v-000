@@ -33,7 +33,7 @@ let mergeSort = array => {
   const left = array.slice(0, middle)
   const right = array.slice(middle)
 
-  merge(mergeSort(left), mergeSort(right))
+  return merge(mergeSort(left), mergeSort(right))
 }
 
 let merge = (left, right) => {
