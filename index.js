@@ -22,7 +22,6 @@ let bruteForceTwoSum = (a, sum) => {
 
 let binarySearchTwoSum = (a, sum) => {
   mergeSort(a)
-  return a
 }
 
 let mergeSort = array => {
