@@ -1,7 +1,7 @@
 let bruteForceTwoSum = (a, sum) => {
   let twoSums = [];
   for (let i = 0; i < a.length; i++) {
-    for (let j = 0; i < a.length; j++) {
+    for (let j = 0; j < a.length; j++) {
       if ([i] != [j]) {
         if (sum === (a[i] + a[j]) && twoSums[twoSums.length - 1] != [a[i], a[j]]) {
          twoSums.push([a[i], a[j]])
