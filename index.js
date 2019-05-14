@@ -30,8 +30,8 @@ let mergeSort = array => {
   }
 
   const middle = Math.floor(array.length / 2)
-  const left = array.splice(0, middle)
-  const right = array.splice(middle)
+  const left = array.slice(0, middle)
+  const right = array.slice(middle)
 
   merge(mergeSort(left), mergeSort(right))
 }
