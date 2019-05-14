@@ -25,7 +25,7 @@ let binarySearchTwoSum = (a, sum) => {
 }
 
 let mergeSort = array => {
-  if (array.lenth <=1) {
+  if (array.lenth <= 1) {
     return array
   }
 
